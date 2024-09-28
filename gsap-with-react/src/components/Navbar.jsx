@@ -18,7 +18,7 @@ const Navbar = () => {
         })
     })
     return (
-        <nav className="flex justify-between items-center my-5">
+        <nav className="flex justify-between items-center my-5 max-w-6xl mx-auto">
             <div>
                 <h1 ref={logoRef} className="text-xl md:text-2xl font-bold">GSAP With React</h1>
             </div>

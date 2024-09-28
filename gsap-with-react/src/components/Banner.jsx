@@ -40,21 +40,21 @@ const Banner = () => {
 
         gsap.to(thirdRef.current, {
             x: 280,
-            duration: 1,
+            duration: 2,
             yoyo: true,
             repeat: -1,
-            opacity: 0
+            opacity: 2
         })
         gsap.to(fifthRef.current, {
             x: -280,
-            duration: 1,
+            duration: 2,
             yoyo: true,
             repeat: -1,
-            opacity: 0,
+            opacity: 1,
         })
     })
     return (
-        <div className="flex items-center justify-evenly my-20 *:text-center">
+        <div className="flex items-center justify-evenly *:text-center min-h-screen max-w-6xl mx-auto">
             <div>
                 <button onClick={firstAnimate} className="bg-red-400 px-5 py-2 rounded-md text-white font-semibold active:scale-105">Rotate Me</button>
                 <div ref={firstRef} className="min-w-[200px] min-h-[200px] bg-red-400 mt-20"></div>
