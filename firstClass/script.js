@@ -6,14 +6,29 @@ tl.from('#logo h2', {
 })
 tl.from('ul li', {
     y: -50,
+    autoAlpha: 1,
     duration: 1,
     opacity: 0,
     stagger: .2
 })
 
-tl.from('#banner', {
-    y: 10,
-    opacity: 0,
-    duration: .5,
-    scale: .5,
-})
+
+ const button = document.getElementById('button')
+function animation() {
+    button.style.visibility = 'hidden'
+    const tl = gsap.timeline({ repeat: -1 })
+    tl
+        .from('.text-container p', {
+            autoAlpha: 0,
+            y: 100,
+            stagger: .75,
+            duration: .75,
+        })
+        .to('.text-container p', {
+            autoAlpha: 0,
+            y: -100,
+            stagger: .75,
+            duration: .75
+        }, 0.75)
+
+}
