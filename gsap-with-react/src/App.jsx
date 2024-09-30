@@ -1,4 +1,5 @@
 import Banner from "./components/Banner"
+import Experience from "./components/Experience"
 import Navbar from "./components/Navbar"
 import TextWithPin from "./components/TextWithPin"
 
@@ -8,9 +9,7 @@ function App() {
       <Navbar />
       <Banner />
       <TextWithPin />
-      <div className="min-h-screen">
-
-      </div>
+      <Experience />
     </main>
   )
 }

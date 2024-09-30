@@ -16,7 +16,7 @@ tl.from('ul li', {
  const button = document.getElementById('button')
 function animation() {
     button.style.visibility = 'hidden'
-    const tl = gsap.timeline({ repeat: -1 })
+    const tl = gsap.timeline()
     tl
         .from('.text-container p', {
             autoAlpha: 0,
@@ -28,7 +28,13 @@ function animation() {
             autoAlpha: 0,
             y: -100,
             stagger: .75,
-            duration: .75
+            duration: .75,
         }, 0.75)
-
+        .to('img', {
+            autoAlpha: 1,
+            height: 400,
+        })
+        .to('.button-container', {
+            height:0
+        }, 2)
 }

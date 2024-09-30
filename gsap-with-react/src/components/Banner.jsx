@@ -54,7 +54,7 @@ const Banner = () => {
         })
     })
     return (
-        <div className="flex items-center justify-evenly *:text-center min-h-screen max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-evenly *:text-center min-h-screen max-w-6xl mx-auto">
             <div>
                 <button onClick={firstAnimate} className="bg-red-400 px-5 py-2 rounded-md text-white font-semibold active:scale-105">Rotate Me</button>
                 <div ref={firstRef} className="min-w-[200px] min-h-[200px] bg-red-400 mt-20"></div>
