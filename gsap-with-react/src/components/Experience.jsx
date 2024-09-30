@@ -34,7 +34,7 @@ const Experience = () => {
                 trigger: '#experience',
                 start: 'top 20%',
                 end: 'top -100%',
-                scrub:1,
+                scrub:.75,
                 pin: true,
             },
         });
